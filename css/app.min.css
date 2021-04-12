@@ -290,7 +290,7 @@ body {
   font-size: 16px;
   font-weight: 400
 }
-.bewerbung.wrapper {
+.wrapper {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
@@ -302,12 +302,12 @@ body {
   -ms-flex-direction: column;
   flex-direction: column
 }
-.bewerbung._container {
+._container {
   max-width: 1050px;
   margin: 0 auto
 }
 @media (max-width:767.98px) {
-  .bewerbung._container {
+  ._container {
     max-width: none
   }
 }
@@ -816,7 +816,7 @@ body {
     color: #2196f3
   }
 }
-.bewerbung.page {
+.page {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto
