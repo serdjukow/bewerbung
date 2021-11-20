@@ -1,0 +1,206 @@
+.mail__container {
+	width: 100%;
+
+	.group-text-input {
+		display: flex;
+		justify-content: space-between;
+		.input-wrap {
+			width: 49%;
+		}
+	}
+
+	.input-wrap {
+		position: relative;
+		width: 100%;
+		margin-bottom: 25px;
+		background: #ffffff;
+		border-radius: 4px;
+		overflow: hidden;
+		i {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			color: #848e99;
+		}
+	}
+
+	/* input */
+
+	.input-wrap label {
+		pointer-events: none;
+		position: absolute;
+		left: 20px;
+		transition: all 0.2s ease-in-out;
+		color: #848e99;
+	}
+
+	.form-input {
+		height: 60px;
+		width: 100%;
+		padding: 20px 20px 0px;
+		background: none;
+		outline: none;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		font: 500 17px "Roboto";
+		border: solid 1px #dde1e6;
+		border-radius: 4px;
+	}
+
+	.input-label {
+		line-height: 60px;
+	}
+
+	.area-label {
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		background: #ffffff;
+		border-radius: 4px;
+		padding: 8px 0 10px;
+		width: calc(100% - 34px);
+		left: 20px;
+		position: absolute;
+		top: 11px;
+		color: #848e99;
+	}
+
+	.active {
+		font-size: 14px;
+		transform: translateY(-10px);
+	}
+
+	/* inputfile */
+	.labelFile {
+		width: 210px;
+		border-radius: 4px;
+		cursor: pointer;
+		display: block;
+		font-size: 14px;
+		font-weight: 500;
+		transition: all 0.2s ease-in-out;
+		border: 1px solid #c7ced7;
+		color: #2c3949;
+		background: #f4f7fb;
+		padding: 10px;
+		margin-bottom: 10px;
+		img {
+			display: block;
+			max-width: 100%;
+			width: 28px;
+		}
+		p {
+			margin-left: 20px;
+			font-weight: bold;
+		}
+	}
+
+	.labelFile:hover {
+		background: #e2e9f4;
+	}
+
+	.labelFile:active {
+		background: #dae1ec;
+	}
+
+	.inputFile {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	#texta {
+		resize: none;
+		width: 100%;
+		height: 100%;
+		padding: 34px 20px;
+		font: 16px "Roboto";
+		outline: none;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border: solid 1px #dde1e6;
+		border-radius: 4px;
+		-webkit-transition: border 0.2s ease-in-out;
+		-o-transition: border 0.2s ease-in-out;
+		transition: border 0.2s ease-in-out;
+	}
+
+	#texta::-webkit-scrollbar {
+		width: 14px;
+	}
+
+	#texta::-webkit-scrollbar-thumb {
+		background-clip: content-box;
+		border: 4px solid transparent;
+		border-radius: 7px;
+		-webkit-box-shadow: inset 0 0 0 10px;
+		box-shadow: inset 0 0 0 10px;
+		color: #bdbdbd;
+	}
+
+	#texta::-webkit-scrollbar-button {
+		width: 0;
+		height: 0;
+		display: none;
+	}
+
+	#texta::-webkit-scrollbar-corner {
+		background-color: transparent;
+	}
+
+	.aInput {
+		transition: border 0.2s ease-in-out;
+	}
+
+	.aInput:hover {
+		border: solid 1px #b4bbc3;
+	}
+
+	.aInput:focus {
+		border: solid 1px #6eaffe;
+	}
+
+	.button:disabled {
+		cursor: not-allowed;
+		background: #b1b1b1;
+	}
+
+	@media (min-width: 320px) and (max-width: 729px) {
+		.group-text-input,
+		.input-wrap {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 570px) {
+		#form {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			padding: 30px 7vw;
+		}
+
+		.labelFile img {
+			margin-left: 0;
+		}
+
+		.labelFile {
+			width: 100%;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-bottom: 25px;
+		}
+
+		.button {
+			margin: 10px auto;
+			width: 70%;
+			min-width: 150px;
+		}
+	}
+}

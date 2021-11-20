@@ -1,0 +1,25 @@
+.footer {
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	// .footer__content
+
+	&__content {
+		padding: 20px;
+		background: #393939;
+		background: radial-gradient(circle, #393939 0, #111 100%);
+	}
+	// .footer__link
+
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+		color: rgba(255, 255, 255, 1);
+		transition: color .3s ease 0s;
+		@media (min-width: $md2 + px) {
+			&:hover {
+				color: #2196f3;
+			}
+		}
+	}
+}

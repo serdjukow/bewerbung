@@ -1,0 +1,7 @@
+//< adaptive_padding =============================================================
+.adaptive_padding {
+	padding: calc(20px + (50 - 20) * ((100vw - 320px)/(1200 - 320)));
+}
+// 1200 - max-width, 320 - min-width
+// 50 max padding. 20 min padding
+//</ adaptive_padding =============================================================
