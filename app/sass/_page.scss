@@ -24,7 +24,7 @@
 
 .column-left {
 	position: relative;
-	flex: 0 1 30%;
+	flex: 0 1 25%;
 	background: #393939;
 	background: radial-gradient(circle, #393939 0, #111 100%);
 	color: #fff;
@@ -67,14 +67,17 @@
 	&__title {
 		text-transform: uppercase;
 		margin-bottom: 20px;
-		padding: 10px 20px 0px 20px;
+		padding: 30px 20px 0px 20px;
+		p {
+			font-size: 20px;
+		}
 	}
 
 	// .item-left__name
 
 	&__name {
 		display: block;
-		font-size: 36px;
+		font-size: 30px;
 		font-weight: 300;
 	}
 
@@ -82,7 +85,7 @@
 
 	&__surname {
 		display: block;
-		font-size: 36px;
+		font-size: 30px;
 		font-weight: 500;
 		margin-bottom: 5px;
 	}
@@ -240,6 +243,9 @@
 }
 
 .resume {
+	&__title {
+		padding-top: 20px;
+	}
 	// .resume__item
 
 	&__item {
@@ -366,6 +372,13 @@
 	}
 	@page {
 		margin: 0 0;
+	}
+	.header__image {
+		position: absolute;
+		top: -50px;
+		right: 30px;
+		width: 330px;
+		height: 330px;
 	}
 	.resume {
 		page-break-inside: auto;
