@@ -304,9 +304,7 @@ body {
 }
 ._container {
   max-width: 1050px;
-  margin: 0 auto;
-  border-left: 2px solid #393939;
-  border-right: 2px solid #393939
+  margin: 0 auto
 }
 @media (max-width:767.98px) {
   ._container {
