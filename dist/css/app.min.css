@@ -422,6 +422,12 @@ body {
     opacity: .5
   }
 }
+.lebenslauf-save__link:active,
+.lebenslauf-save__link:focus,
+.lebenslauf-save__link:visited {
+  outline: 0;
+  border: none
+}
 .pdf {
   background-image: url(../images/icon/pdf.png)
 }

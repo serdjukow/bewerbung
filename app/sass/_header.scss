@@ -108,6 +108,12 @@
 				opacity: 0.5;
 			}
 		}
+		&:visited,
+		&:active,
+		&:focus {
+			outline: none;
+			border: none;
+		}
 	}
 }
 .pdf {
