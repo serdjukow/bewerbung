@@ -323,8 +323,9 @@ body {
   flex-direction: column
 }
 .header__row {
+  position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,6 +387,46 @@ body {
     width: 350px;
     height: 350px
   }
+}
+.lebenslauf-save {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.lebenslauf-save__link {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: opacity .3s ease-in;
+  -o-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+  opacity: 1;
+  outline: 0
+}
+.lebenslauf-save__link:not(:last-child) {
+  margin-right: 20px
+}
+@media (any-hover:hover) {
+  .lebenslauf-save__link:hover {
+    opacity: .5
+  }
+}
+.pdf {
+  background-image: url(../images/icon/pdf.png)
+}
+.word {
+  background-image: url(../images/icon/doc.png)
 }
 .application {
   position: relative

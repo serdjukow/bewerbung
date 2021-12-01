@@ -7,15 +7,16 @@
 	// .header__row
 
 	&__row {
+		position: relative;
 		width: 100%;
-		min-height: 400px;
+		min-height: 700px;
 		display: flex;
 		align-items: center;
 		flex: 1 1 auto;
 		background: #393939;
 		background: radial-gradient(circle, #393939 0, #111 100%);
 	}
-	
+
 	// .header__content
 
 	&__content {
@@ -77,4 +78,41 @@
 			height: 350px;
 		}
 	}
+}
+
+.lebenslauf-save {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 30px;
+	display: flex;
+	// .lebenslauf-save__link
+
+	&__link {
+		position: relative;
+		display: block;
+		width: 60px;
+		height: 60px;
+		background-position: center;
+		background-size: cover;
+		color: #fff;
+		text-decoration: none;
+		transition: opacity 0.3s ease-in;
+		opacity: 1;
+		outline: none;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+.pdf {
+	background-image: url(../images/icon/pdf.png);
+}
+.word {
+	background-image: url(../images/icon/doc.png);
 }
